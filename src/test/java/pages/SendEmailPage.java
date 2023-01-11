@@ -15,11 +15,12 @@ public class SendEmailPage {
         SelenideElement recepientForm = $x("//input[@class='agP aFw']");
         SelenideElement subjectForm = $(By.name("subjectbox"));
         SelenideElement messageForm = $x("//div[@role='textbox']");
+        SelenideElement sendButton = $$("[aria-label*='Отправить']").last();
 
         recepientForm.sendKeys(recepient);
         subjectForm.sendKeys(subject);
         messageForm.sendKeys(message);
 
-
+        sendButton.click();
     }
 }

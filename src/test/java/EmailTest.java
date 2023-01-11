@@ -27,8 +27,5 @@ public class EmailTest extends BaseTest {
 
         SendEmailPage sendEmailPage = new SendEmailPage();
         sendEmailPage.sendMessage(recepient, subject, message);
-
-
-        System.out.println();
     }
 }
